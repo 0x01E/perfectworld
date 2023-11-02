@@ -23994,7 +23994,7 @@
                 }
                 ))), i.a.createElement("div", {
                     className: "perfectworld-copyright"
-                }, window.settings.title ? window.settings.title : "Perfectworld", " v1.7.4"))
+                }, window.settings.title ? window.settings.title : "Perfectworld", " alpha"))
             }
         }
         var f = Object(c["c"])(e=>{

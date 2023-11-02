@@ -2,10 +2,10 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="/theme/{{$theme}}/assets/components.chunk.css?v={{$version}}">
-    <link rel="stylesheet" href="/theme/{{$theme}}/assets/umi.css?v={{$version}}">
+    <link rel="stylesheet" href="/theme/{{$theme}}/assets/components.chunk.css">
+    <link rel="stylesheet" href="/theme/{{$theme}}/assets/umi.css">
     @if (file_exists(public_path("/theme/{$theme}/assets/custom.css")))
-        <link rel="stylesheet" href="/theme/{{$theme}}/assets/custom.css?v={{$version}}">
+        <link rel="stylesheet" href="/theme/{{$theme}}/assets/custom.css">
     @endif
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
@@ -29,7 +29,7 @@
                 header: '{{$theme_config['theme_header']}}',
                 color: '{{$theme_config['theme_color']}}',
             },
-            version: '{{$version}}',
+            version: 'alpha',
             background_url: '{{$theme_config['background_url']}}',
             description: '{{$description}}',
             i18n: [
@@ -44,23 +44,23 @@
             logo: '{{$logo}}'
         }
     </script>
-    <script src="/theme/{{$theme}}/assets/i18n/zh-CN.js?v={{$version}}"></script>
-    <script src="/theme/{{$theme}}/assets/i18n/zh-TW.js?v={{$version}}"></script>
-    <script src="/theme/{{$theme}}/assets/i18n/en-US.js?v={{$version}}"></script>
-    <script src="/theme/{{$theme}}/assets/i18n/ja-JP.js?v={{$version}}"></script>
-    <script src="/theme/{{$theme}}/assets/i18n/vi-VN.js?v={{$version}}"></script>
-    <script src="/theme/{{$theme}}/assets/i18n/ko-KR.js?v={{$version}}"></script>
-    <script src="/theme/{{$theme}}/assets/i18n/fa-IR.js?v={{$version}}"></script>
+    <script src="/theme/{{$theme}}/assets/i18n/zh-CN.js"></script>
+    <script src="/theme/{{$theme}}/assets/i18n/zh-TW.js"></script>
+    <script src="/theme/{{$theme}}/assets/i18n/en-US.js"></script>
+    <script src="/theme/{{$theme}}/assets/i18n/ja-JP.js"></script>
+    <script src="/theme/{{$theme}}/assets/i18n/vi-VN.js"></script>
+    <script src="/theme/{{$theme}}/assets/i18n/ko-KR.js"></script>
+    <script src="/theme/{{$theme}}/assets/i18n/fa-IR.js"></script>
 </head>
 
 <body>
 <div id="root"></div>
 {!! $theme_config['custom_html'] !!}
-<script src="/theme/{{$theme}}/assets/vendors.async.js?v={{$version}}"></script>
-<script src="/theme/{{$theme}}/assets/components.async.js?v={{$version}}"></script>
-<script src="/theme/{{$theme}}/assets/umi.js?v={{$version}}"></script>
+<script src="/theme/{{$theme}}/assets/vendors.async.js"></script>
+<script src="/theme/{{$theme}}/assets/components.async.js"></script>
+<script src="/theme/{{$theme}}/assets/umi.js"></script>
 @if (file_exists(public_path("/theme/{$theme}/assets/custom.js")))
-    <script src="/theme/{{$theme}}/assets/custom.js?v={{$version}}"></script>
+    <script src="/theme/{{$theme}}/assets/custom.js"></script>
 @endif
 </body>
 
